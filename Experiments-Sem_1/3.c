@@ -37,18 +37,39 @@ int decimal(long long bnum)
 
 int main()
 {
-    int num;
-    printf("Enter number: ");
-    scanf("%d", &num);
+    int decimal_num;
+    int choice;
+    char hexal_num[100], octal_num[100], binary_num[100]; //Change back to int and flag input upo validation  if found inaccurate
+    printf("\t\tWelcome to the Number System Convertor\n");
+    printf("Choose type of number to input: \n");
+    printf("1. Decimal\n");
+    printf("2. Binary\n");
+    printf("3. Octal\n");
+    printf("4. Hexadecimal\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
 
-    printf("Decimal: %d\n", num);
-    printf("Binary: ");
-    binary(num);
-    printf("Octal: %o\n", num);
-    printf("Hexadecimal: %x\n\n", num);
+    switch (choice){
+        case 1:
+            printf("Enter decimal number:");
+            scanf("%d", &decimal_num);
+            break;
+        case 2:
+            printf("Enter binary number:");
+            scanf(" %[01]", binary_num);
+            printf("Binary: %s", binary_num);
+            break;
+        case 3:
+            printf("Enter octal number:");
+            scanf(" %[0-7]", &octal_num);
+            printf("Octal: %s", octal_num);
+            break;
+        case 4:
+            printf("Enter hexadecimal number:");
+            scanf(" %[0-9A-F]", hexal_num);
+            printf("Hexal: %s", hexal_num);
+            break;
+    }
 
-    long long bnum;
-    printf("Enter binary number: ");
-    scanf("%lld", &bnum);
-    printf("Decimal Equivalent: %d", decimal(bnum));
+    return 0;
 }
