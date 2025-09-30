@@ -43,22 +43,22 @@ int oct_dec(int onum) {
 int hex_dec(char hnum[]) {
     int dnum = 0, base = 1, remainder;
     for (int i = strlen(hnum) - 1; i >= 0; i--) {
-        if (hnum[i] == 'A') {
+        if (hnum[i] == 'A' || hnum[i] == 'a') {
             remainder = 10;
         }
-        else if (hnum[i] == 'B') {
+        else if (hnum[i] == 'B' || hnum[i] == 'b') {
             remainder = 11;
         }
-        else if (hnum[i] == 'C') {
+        else if (hnum[i] == 'C' || hnum[i] == 'c') {
             remainder = 12;
         }
-        else if (hnum[i] == 'D') {
+        else if (hnum[i] == 'D' || hnum[i] == 'd') {
             remainder = 13;
         }
-        else if (hnum[i] == 'E') {
+        else if (hnum[i] == 'E' || hnum[i] == 'e') {
             remainder = 14;
         }
-        else if (hnum[i] == 'F') {
+        else if (hnum[i] == 'F' || hnum[i] == 'f') {
             remainder = 15;
         }
         else {
@@ -82,6 +82,7 @@ int main() {
     printf("4. Hexadecimal\n");
     printf("Enter your choice (1-4): ");
     scanf("%d", &choice);
+    printf("\n");
 
     switch (choice) {
         case 1:
@@ -109,6 +110,7 @@ int main() {
     printf("4. Hexadecimal\n");
     printf("Enter your choice (1-4): ");
     scanf("%d", &convert);
+    printf("\n");
 
     switch (choice) {
         case 1:
@@ -118,13 +120,13 @@ int main() {
                     break;
                 case 2:
                     printf("Binary: ");
-                    bin_dec(decimal_num);
+                    dec_bin(decimal_num);
                     break;
                 case 3:
                     printf("Octal: %o", decimal_num);
                     break;
                 case 4:
-                    printf("Octal: %x", decimal_num);
+                    printf("Hexadecimal: %x", decimal_num);
                     break;
             }
             break;
@@ -179,5 +181,6 @@ int main() {
             }
             break;
     }
+    printf("\n");
     return 0;
 }
