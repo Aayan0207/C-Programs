@@ -71,7 +71,7 @@ int hex_dec(char hnum[]) {
 }
 
 int main() {
-    int decimal_num, octal_num, choice, convert, valid = 0;
+    int decimal_num, octal_num, choice, convert;
     long long binary_num;
     char hexal_num[100];
     printf("\t\tWelcome to the Number System Convertor\n");
