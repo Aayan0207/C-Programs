@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Character and ASCII Table
+
 int main() {
     char chars[5];
     for (int i = 0; i < 5; i++) {

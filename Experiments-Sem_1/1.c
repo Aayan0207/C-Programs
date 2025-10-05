@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main()
-{
+//Getting Started with C
+
+int main() {
     printf("Hello World\n");
     printf("Name: Aayan Khan\n");
     printf("Roll No: 54\n");

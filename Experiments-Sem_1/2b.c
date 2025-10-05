@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main()
-{
+//Logical and Bitwise Operators
+
+int main() {
     int x = 5, y = 0;
 
     // Logical operators

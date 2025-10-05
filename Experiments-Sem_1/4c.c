@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Bank Balance Formatting
+
 int main() {
     char name[32];
     float balance;

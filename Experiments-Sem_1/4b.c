@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Temperature Conversion Table
+
 float fahrenheit(float temp) {
     return (temp * 9 / 5) + 32;
 }

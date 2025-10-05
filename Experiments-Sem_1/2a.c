@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main()
-{
+//Variables, Constants, and Data Types ; Arithmetic and Relational Operators
+
+int main() {
     int a = 10, b = 20;
     float f = 3.14;
     char c = 'A';
