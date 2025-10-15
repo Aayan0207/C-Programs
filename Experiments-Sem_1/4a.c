@@ -3,7 +3,7 @@
 //Student Report Card
 
 int main() {
-    char name[32], subject_1[16], subject_2[16], subject_3[16], subject_4[16], subject_5[16];
+    char name[32], subject_1[16], subject_2[18], subject_3[16], subject_4[16], subject_5[16];
     int roll_no;
     float marks_1, marks_2, marks_3, marks_4, marks_5;
 
@@ -37,11 +37,11 @@ int main() {
     printf("\n-------------------------\n");
     printf("|Subject\t|Marks\t|");
     printf("\n-------------------------\n");
-    printf("|%s\t|%.2f\t|\n", subject_1, marks_1);
+    printf("|%s\t |%.2f\t|\n", subject_1, marks_1);
     printf("|%s|%.2f\t|\n", subject_2, marks_2);
-    printf("|%s\t|%.2f\t|\n", subject_3, marks_3);
-    printf("|%s\t|%.2f\t|\n", subject_4, marks_4);
-    printf("|%s\t|%.2f\t|\n", subject_5, marks_5);
+    printf("|%s\t |%.2f\t|\n", subject_3, marks_3);
+    printf("|%s\t |%.2f\t|\n", subject_4, marks_4);
+    printf("|%s\t |%.2f\t|\n", subject_5, marks_5);
     printf("-------------------------\n");
     return 0;
 }
