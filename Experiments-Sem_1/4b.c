@@ -19,7 +19,7 @@ int main() {
     printf("| Celsius | Fahrenheit |\n");
     printf("------------------------\n");
     for (int i = 0; i < n; i++) {
-        printf("| %.2f  |\t%.2f |\n", temps[i], fahrenheit(temps[i]));
+        printf("| %.2f   |\t%.2f  |\n", temps[i], fahrenheit(temps[i]));
     }
     printf("------------------------\n");
     return 0;

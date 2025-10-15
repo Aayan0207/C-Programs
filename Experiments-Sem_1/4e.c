@@ -8,4 +8,5 @@ int main() {
     scanf("%f", &num);
     printf("Default format: %f\n", num);
     printf("Scientific format: %e", num);
+    return 0;
 }
