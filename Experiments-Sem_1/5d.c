@@ -9,6 +9,6 @@ int main() {
     result_1 = a & b && c;
     result_2 = a && b & c;
 
-    printf("Result 1 = %d\nResult 2 = %d\n", result_1, result_2);
+    printf("Result 1: %d\nResult 2: %d\n", result_1, result_2);
     return 0;
 }
