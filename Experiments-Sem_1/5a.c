@@ -13,7 +13,7 @@ int main() {
     printf("Result 2: %d\n", result_2);
 
     result_3 = a + b * c > b + c && c - a > b;
-    printf("Result: %d\n", result_3);
+    printf("Result 3: %d\n", result_3);
 
     return 0;
 }
