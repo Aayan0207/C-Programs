@@ -42,7 +42,7 @@ int main() {
                 printf("The remainder is: %d \n", num1 % num2);
                 break;
             case 6:
-                printf("The exponentation is: %f \n", pow(num1, num2));
+                printf("The exponentation is: %d \n", pow(num1, num2));
                 break;
         }
         printf("Continue operations (y/n)? ");
