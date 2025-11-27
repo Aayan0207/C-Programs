@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Sum of digits using while loop
+//Sum of digits of a number using while loop
 
 int main() {
     int num, remainder, sum = 0;
