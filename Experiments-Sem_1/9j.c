@@ -2,7 +2,7 @@
 
 //Bubble sort
 int main() {
-    int arr[100], copy[100], n;
+    int arr[100], n;
     printf("Enter n: ");
     scanf("%d", &n);
     printf("Enter numbers: \n");

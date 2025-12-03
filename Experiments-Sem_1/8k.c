@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define REQUIRED_VERSION 3
+#define REQUIRED_VERSION 4
 
 #if REQUIRED_VERSION < 2
 #error "Version too old."

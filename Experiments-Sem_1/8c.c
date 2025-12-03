@@ -12,7 +12,7 @@ int main() {
         a++;
     }
     end = clock();
-    printf("Auto variable time: %f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
+    printf("Auto variable time: %.3f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
 
     register int r = 0; // Using register variable
 
@@ -21,7 +21,7 @@ int main() {
         r++;
     }
     end = clock();
-    printf("Register variable time: %f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
+    printf("Register variable time: %.3f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
 
     return 0;
 }
