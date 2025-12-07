@@ -17,8 +17,9 @@ int mod(int x, int y) {
     return x % y;
 }
 int power(int x, int y) {
-    for (int i = 0; i < y; i++) {
-        x *= x;
+    int tmp = x;
+    for (int i = 1; i < y; i++) {
+        x *= tmp;
     }
     return x;
 }
